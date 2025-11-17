@@ -79,7 +79,14 @@ header p {
   gap: 16px;
 }
 
+a {
+  color: inherit;
+  width: 100%;
+  text-decoration: none;
+}
+
 button {
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   font: inherit;
@@ -102,7 +109,7 @@ button:hover {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--green);
 }
 
 @media (max-width: 375px) {
