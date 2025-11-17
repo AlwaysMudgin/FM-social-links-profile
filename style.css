@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --grey-900: hsl(0, 0%, 8%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-700: hsl(0, 0%, 20%);
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  color: var(--white);
+  background-color: var(--grey-900);
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  max-width: 384px;
+  min-width: 327px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  background-color: var(--grey-800);
+  border-radius: 12px;
+}
+
+img {
+  height: 88px;
+  width: 88px;
+  border-radius: 999px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header p {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.blurb {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.links-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font: inherit;
+  font-weight: 700;
+  color: inherit;
+  background-color: var(--grey-700);
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: var(--green);
+  color: var(--grey-700);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .card {
+    padding: 24px;
+  }
+}
